@@ -1,0 +1,4 @@
+nav:
+- Home: index.md
+site_name: My Notion Site
+theme: material
