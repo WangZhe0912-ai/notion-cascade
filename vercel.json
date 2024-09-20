@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "regions": ["hkg1"],
   "builds": [
     {
       "src": "build.sh",
@@ -14,10 +15,5 @@
       "src": "/(.*)",
       "dest": "/$1"
     }
-  ],
-  "build": {
-    "env": {
-      "PYTHON_VERSION": "3.8"
-    }
-  }
+  ]
 }
