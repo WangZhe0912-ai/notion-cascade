@@ -120,14 +120,12 @@
     ```bash
     pip install vercel
     vercel login
-    vercel link
-    vercel env add NOTION_TOKEN
     ```
 
     然后，每次您想更新网站时，只需运行：
 
     ```bash
-    vercel --prod
+    vercel --prod --yes
     ```
 
 注意：确保您的 `requirements.txt` 文件包含所有必要的依赖，包括 `mkdocs` 和 `mkdocs-material`。
