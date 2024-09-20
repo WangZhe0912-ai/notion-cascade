@@ -1,0 +1,7 @@
+.conda
+node_modules
+*.log
+*.md
+tests
+dist
+build

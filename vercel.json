@@ -1,19 +1,17 @@
 {
   "version": 2,
-  "regions": ["hkg1"],
+  "name": "notion-cascade",
+  "public": true,
   "builds": [
     {
-      "src": "build.sh",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "site"
-      }
+      "src": "site/**/*",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/$1"
+      "dest": "/site/$1"
     }
   ]
 }

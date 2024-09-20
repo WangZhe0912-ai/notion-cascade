@@ -25,10 +25,12 @@ jobs:
 
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v20
+        env:
+          CI: true  # 设置 CI 环境变量
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-args: '--prod'
+          vercel-args: '--prod --yes'
           working-directory: ./site  # 指定生成的静态文件目录
           # 如果需要，指定项目名和组织ID
           vercel-project-name: 'notion-cascade'
-          # vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-org-id: 'team_Up7rrfwJOuxvcioa78e8x0Jb'
