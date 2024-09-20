@@ -33,4 +33,3 @@ jobs:
           working-directory: ./site  # 指定生成的静态文件目录
           # 如果需要，指定项目名和组织ID
           vercel-project-name: 'notion-cascade'
-          vercel-org-id: 'team_Up7rrfwJOuxvcioa78e8x0Jb'
