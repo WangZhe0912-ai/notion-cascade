@@ -30,6 +30,5 @@ jobs:
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-args: '--prod --yes --debug'
-          working-directory: ./site  # 指定生成的静态文件目录
           # 如果需要，指定项目名和组织ID
           vercel-project-name: 'notion-cascade'

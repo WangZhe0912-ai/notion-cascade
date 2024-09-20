@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "notion-cascade",
+  "public": true,
+  "builds": [
+    {
+      "src": "site/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/site/$1"
+    }
+  ]
+}
